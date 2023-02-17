@@ -3,10 +3,10 @@ import os
 """ Se crea una constate de el abecedario """
 abecedario=("abcdefghijklmnñopqrstuvwxyz")
 
-""" Cesar """
+""" Cesar funciones"""
 
 
-""" Polybios """
+""" Polybios funciones"""
 
 
 """ Vigenere funciones"""
