@@ -1,6 +1,6 @@
 import os
 
-""" Se crea una constate de el abecedartio """
+""" Se crea una constate de el abecedario """
 abecedario=("abcdefghijklmnñopqrstuvwxyz")
 
 """ Cesar """
