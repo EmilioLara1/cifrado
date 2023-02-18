@@ -1,15 +1,17 @@
 import os
+# -*- coding: utf-8 -*-
 
-""" Se crea una constate de el abecedario """
+# Se crea una constate de el abecedario 
 abecedario=("abcdefghijklmnñopqrstuvwxyz")
 
-""" Cesar funciones"""
+# Cesar funciones
 
 
-""" Polybios funciones"""
+# Polybios funciones
 
 
-""" Vigenere funciones"""
+
+# Vigenere funciones
 def vicifrar(mensaje, key):
     cifrado = ""
     i = 0
@@ -42,9 +44,12 @@ def main():
         print ("|---------------------------------------|")
         opt1=int(input("Ingrese la opción: "))
 
+        #Opciones de Cesar
 
 
-        """ Opciones de Vigenere """
+        # Opciones de Polybios
+
+        #Opciones de Vigenere
         if (opt1==3):
             print ("|--------------|")
             print ("|  1 Cifrar    |")
@@ -52,21 +57,21 @@ def main():
             print ("|--------------|")
             opt2=int(input("Ingrese la opción: "))
 
-            """ Cifrado """
+            # Cifrado 
             if (opt2==1):
-                """ Se le pide al usuario el texto que desea cifrar """
-                c = str(input("Introduce el texto a cifrar: ")).lower()
+                # Se le pide al usuario el texto que desea cifrar 
+                c = str(input("Ingrese el mensaje a cifrar: ")).lower()
 
-                """ Se le pide la clave de cifrado """  
+                # Se le pide la clave de cifrado #  
                 clave = str(input("Introduce la clave: ")).lower() 
                 print (vicifrar(c, clave))
             
-            """ Decifrado """
+            # Decifrado 
             if (opt2==2):
-                """ Se le pide al usuario el texto que desea decifrar """
-                c = str(input("Introduce el texto a descifrar: ")).lower() 
+                #Se le pide al usuario el texto que desea decifrar 
+                c = str(input("Introduce el texto a descifrar: ")).lower()
 
-                """ Se le pide la clave de cifrado, debe de ser la misma que la de cifrado""" 
+                # Se le pide la clave de cifrado, debe de ser la misma que la de cifrado 
                 clave = str(input("Introduce la clave: ")).lower()
                 print (videcifrar(c, clave))
         
