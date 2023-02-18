@@ -64,7 +64,7 @@ def main():
 
                 # Se le pide la clave de cifrado #  
                 clave = str(input("Introduce la clave: ")).lower() 
-                print (vicifrar(c, clave))
+                print ("Mensaje cifrado: ", vicifrar(c, clave))
             
             # Decifrado 
             if (opt2==2):
@@ -73,7 +73,7 @@ def main():
 
                 # Se le pide la clave de cifrado, debe de ser la misma que la de cifrado 
                 clave = str(input("Introduce la clave: ")).lower()
-                print (videcifrar(c, clave))
+                print ("Mensaje decifrado:", videcifrar(c, clave))
         
         if (opt1==4):
             break
